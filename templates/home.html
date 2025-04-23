@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block content %}
+<style>
+  body {
+    background-color: black !important;
+  }
+  .fullscreen-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+  }
+  .fullscreen-tile {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .fullscreen-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    z-index: 2;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
+{% for i in range(0, lessons|length, 2) %}
+  <div class="fullscreen-grid">
+    {% for j in [0, 1] %}
+      {% set index = i + j %}
+      {% if index < lessons|length %}
+        {% set lesson = lessons[index] %}
+        <a href="{{ url_for('learn', lesson_id=lesson.id) }}">
+          <div class="fullscreen-tile">
+            <img src="{{ lesson.thumbnail }}" alt="{{ lesson.title }}">
+            <div class="overlay-text">
+              <h3>{{ lesson.title }}</h3>
+              <p>{{ lesson.brief }}</p>
+            </div>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endfor %}
+{% endblock %}
