@@ -4,7 +4,7 @@ import json
 app = Flask(__name__)
 
 def load_lessons():
-    with open("data/lessons.json") as f:
+    with open("static/lessons.json") as f:
         data = json.load(f)
         return list(data.values()) 
 
