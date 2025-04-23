@@ -1,0 +1,67 @@
+{
+  "1": {
+    "id": 1,
+    "title": "Rembrandt lighting",
+    "subtitle": "a classic portrait lighting technique, involves a single light source positioned at a 45-degree angle to the subject.",
+    "brief": "A classic portrait lighting technique using a 45-degree light source.",
+    "thumbnail": "https://www.codart.nl/wp-content/uploads/2020/02/Rembrandt-SBG.jpg",
+    "image1": "https://arthive.com/res/media/img/oy1200/work/2a8/446743@2x.jpg",
+    "image2": "https://ychef.files.bbci.co.uk/1280x720/p070wbmx.jpg",
+    "detail_text1": "The key in Rembrandt lighting is creating the triangle or diamond shape of light underneath the eye. One side of the face is lit well from the main light source while the other side of the face uses the interaction of shadows and light, also known as chiaroscuro, to create this geometric form on the face. The triangle should be no longer than the nose and no wider than the eye. This technique may be achieved subtly or very dramatically by altering the distance between subject and lights and relative strengths of main and fill lights.",
+    "detail_text2": "The Impasto Technique of Rembrandt. The heavy viscosity and slow drying time of oil paint make it a suitable medium for the impasto painting technique. Watercolor and tempera paint are not satisfactory for this technique because they lack these properties and do not form continuous films surrounding pigment particles.",
+    "popup1": "This is the triangle of light on the shadowed cheek.",
+    "popup2": "This example shows Rembrandt\u2019s overall use of contrast."
+  },
+  "2": {
+    "id": 2,
+    "title": "Caravaggio's Chiaroscuro",
+    "subtitle": "A technique involving strong contrasts between light and dark to create depth and emotion in his paintings.",
+    "brief": "A dramatic style using strong contrasts of light and dark.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Michelangelo_Merisi%2C_called_Caravaggio_-_Madonna_of_the_Rosary_-_Google_Art_Project.jpg",
+    "image1": "https://www.neh.gov/sites/default/files/2022-06/Summer2022_web-images_26_27_Caravaggio.jpg",
+    "image2": "https://www.italyperfect.com/blog/wp-content/uploads/2014/07/Caravaggio-Michelangelo_Merisi_da-The_Calling_of_Saint_Matthew.jpg",
+    "detail_text1": "We call this kind of light chiaroscuro. In art, it is the use of strong contrast between light and dark, shadows with fast falloff, and bold contrasts affecting a whole composition. When we see it in paintings like this, it is defined as tenebrism.\n\nTenebrism is from the Italian \"tenebroso\" which means \"dark, gloomy, mysterious.\"  This is occasionally called dramatic illumination and is a style of painting using especially pronounced chiaroscuro lighting, where we get violent contrasts of light and dark, and where darkness becomes a dominating feature of the image.\n\nAnd there's a lot of darkness in betrayal. What I think we can learn from this stuff is just the way story is framed. It's the ultimate \"Show, don't tell.\"\n\nSee how Judas is leaning in with a nefarious glint in his eyes?\nAnd Jesus is leaning back, still with some resistance to being killed?\nYou see John fleeing in the background while Peter does battle. There's an entire story here in just one frame. It helps that I went to 12 years of Catholic school, but even if you didn't, you could still infer a lot of these detail.",
+    "detail_text2": "Chiaroscuro is an Italian term which literally means 'light-dark'. In paintings the description refers to clear tonal contrasts which are often used to suggest the volume and modelling of the subjects depicted. Artists who are famed for the use of chiaroscuro include Leonardo da Vinci and Caravaggio. Leonardo employed it to give a vivid impression of the three-dimensionality of his figures, while Caravaggio used such contrasts for the sake of drama. Both artists were also aware of the emotional impact of these effects.",
+    "popup1": "Chiaroscuro effect seen in background-to-subject lighting.",
+    "popup2": "Emotional depth through contrast of light and shadow."
+  },
+  "3": {
+    "id": 3,
+    "title": "Claude Monet Lighting",
+    "subtitle": "Soft and natural lighting typical of Impressionist works.",
+    "brief": "Soft and natural lighting typical of Impressionist works.",
+    "thumbnail": "https://fs.artdevivre.com/storage/articles/main-photos-articles/3ddd1d005abe8cc1789152da71cee3e0.jpg",
+    "image1": "https://substack-post-media.s3.amazonaws.com/public/images/0ba88136-c02e-403b-b711-0a51c178d89a_2867x2867.jpeg",
+    "image2": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Claude_Monet_-_Woman_with_a_Parasol_-_Madame_Monet_and_Her_Son_-_Google_Art_Project.jpg",
+    "detail_text1": "A key practice in Monet’s study of color and light was painting the same subject over and over again in varying conditions. He did this with haystacks, water lilies, the Rouen Cathedral, and the Waterloo Bridge, just to name a few. Whilst I’m unsure if Monet was the first to do such a thing, he was certainly the first to practice it to such an extreme.",
+    "detail_text2": "Despite not being a traditionally Impressionist painting, Monet's love of natural light can be seen in both of his earliest recognized works. The low lit dark tones of Green Dress and the natural summer sunlight of the Garden are a perfect display of Monet's early palette range. In Green Dress, Monet studies how light reacts upon touching various colors on his model. The dark blacks and browns of her fur coat seem as endless and as the darkened background behind her, whilst the low lighting seems to illuminate the lighter colors that she is clad in. The green of her dress is vibrantly portrayed and the minute amount of her skin on display radiates color against the low-lit room. Monet's interest in the study of color is on display again in the Garden. The beautifully lit day makes the white dress of his model and the freshly cut green grass see even more radiant. Monet's use of shadows and dark tonal shades of black further accentuate this.",
+    "popup1": "Sunrise scene painted to show color shift in early light.",
+    "popup2": "Water reflections show how Monet used surface light."
+  },
+  "4": {
+    "id": 4,
+    "title": "Gerard van Honthorst",
+    "subtitle": "Unlike his contemporaries who utilized natural light, he innovated by depicting scenes under strong, artificial sources. ",
+    "brief": "Known for using artificial light sources in night scenes.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/3/38/Gerard_van_Honthorst_001.jpg",
+    "image1": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Gerard_van_Honthorst_-_The_procuress_-_Google_Art_Project.jpg",
+    "image2": "https://www.toperfect.com/pic/Oil%20Painting%20Masterpieces%20on%20Canvas/Honthorst%20Gerrit%20van_Netherlands_1590-1656/7-Balcony-nighttime-candlelit-Gerard-van-Honthorst.jpg",
+    "detail_text1": "Honthorst approach was unique for his time, using light to guide the viewer's attention and to create a dramatic effect. Unlike his contemporaries who utilized natural light, he innovated by depicting scenes under strong, artificial sources like candlelight, which became a central feature in his oeuvre. Single Light Source: He often used a single candle or torch as the primary light source, casting dramatic shadows and highlighting specific areas of the scene. Nocturnal Scenes: His paintings often depict nocturnal scenes, further emphasizing the dramatic effects of the lighting.",
+    "detail_text2": "He specialised in setting the scenes of his paintings by candlelight, with the centre of the flame shining against the shadows and illuminating the focal point of the story that his painting recounted. Gerard’s unique style became so distinctive that he earned the nickname of “Gerard of the night”.",
+    "popup1": "Focus on infant\u2019s illumination from candle glow.",
+    "popup2": "Musicians lit from within the scene\u2019s interior."
+  },
+  "5": {
+    "id": 5,
+    "title": "Leonardo da Vinci Light & Shade",
+    "subtitle": "Light is the expeller of darkness. Shadow is the suppression of light. Primary light is that which is the cause of the lighting of shaded bodies.",
+    "brief": "Scientific use of light and shadow to reveal form.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Leonardo_da_Vinci_%281452-1519%29_-_The_Last_Supper_%281495-1498%29.jpg/1280px-Leonardo_da_Vinci_%281452-1519%29_-_The_Last_Supper_%281495-1498%29.jpg",
+    "image1": "https://cdn1.discovertuscany.com/img/florence/museums/uffizi/leonardo-annunciation.jpg?auto=compress,enhance,format&w=",
+    "image2": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2153290255/settings_images/362a8e6-a3c7-ffa-a1f0-06fe3434a238_Sz2ScWIrSZixfkqQIOZX_mona_lisa_painting_da_vinci.jpg",
+    "detail_text1": "Leonardo da Vinci revolutionized painting through his masterful use of chiaroscuro and sfumato, creating realistic and atmospheric effects by blending light and shadow, and softening edges for a hazy, almost ethereal quality. Rim Lighting: Leonardo also used a technique of adding a rim light from behind the subject to prevent the shadow of the face from blending into the background, as explained in this YouTube video. Background Lighting: He would also add light to the background rather than the sitter, arranging figures against a light background when in shadow, and against a dark background when illuminated, as explained in this YouTube video. In summary, Leonardo da Vinci's mastery of light and shadow, achieved through chiaroscuro and sfumato, created a new level of realism and emotional depth in his paintings, influencing generations of artists.",
+    "detail_text2": "Sfumato is a painting technique Leonardo pioneered that creates soft, hazy transitions between colors and tones. Involves blending colors subtly to create a smooth gradient effect without harsh outlines (Mona Lisa) ... Chiaroscuro is the use of strong contrasts between light and dark to create a sense of volume and depth.",
+    "popup1": "Sfumato seen in the shadow contours of the face.",
+    "popup2": "Soft edges around the hair and clothing demonstrate light gradation."
+  }
+}
