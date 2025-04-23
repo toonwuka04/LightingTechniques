@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %}Lighting Techniques - Start{% endblock %}
+
+{% block content %}
+<style>
+  .start-page {
+    background-color: black;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .start-link {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+
+  .start-link:hover {
+    transform: scale(1.05);
+  }
+</style>
+
+<div class="start-page">
+  <a href="/home" class="start-link">START</a>
+</div>
+{% endblock %}
