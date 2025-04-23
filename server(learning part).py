@@ -19,7 +19,7 @@ def home():
 
 @app.route("/learn/<int:lesson_id>")
 def learn(lesson_id):
-    with open("data/lessons.json") as f:
+    with open("static/lessons.json") as f:
         data = json.load(f)
         lesson = data[str(lesson_id)]  
         return render_template("learn.html", lesson=lesson)
