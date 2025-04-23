@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+{% block title %}{{ lesson.title }}{% endblock %}
+
+{% block content %}
+<style>
+  body {
+    background-color: black !important;
+  }
+  .learn-section {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  .learn-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .learn-description {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  .learn-text {
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .image-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .learn-image {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+  }
+  .info-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .modal-box {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  .modal-content {
+    background-color: #111;
+    color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border: 1px solid #444;
+    width: 80%;
+    max-width: 600px;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close:hover {
+    color: white;
+  }
+  .quiz-button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 3rem auto 0 auto;
+    width: 100%;
+    max-width: 600px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+  }
+  .quiz-button:hover {
+    background-color: #ddd;
+  }
+</style>
+
+<div class="learn-section text-center">
+  <div class="learn-title">{{ lesson.title }}</div>
+  <div class="learn-description">{{ lesson.subtitle }}</div>
+
+  <div class="learn-text">{{ lesson.detail_text1 }}</div>
+
+  <div class="image-container">
+    <img class="learn-image" src="{{ lesson.image1 }}" alt="image1">
+    <div class="info-icon" onclick="document.getElementById('infoModal1').style.display='block'">i</div>
+  </div>
+
+  <div class="learn-text">{{ lesson.detail_text2 }}</div>
+
+  <div class="image-container">
+    <img class="learn-image" src="{{ lesson.image2 }}" alt="image2">
+    <div class="info-icon" onclick="document.getElementById('infoModal2').style.display='block'">i</div>
+  </div>
+
+  <a href="/quiz/{{ lesson.id }}" class="quiz-button">TAKE A QUIZ</a>
+</div>
+
+<!-- Modal Popups -->
+<div id="infoModal1" class="modal-box">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('infoModal1').style.display='none'">&times;</span>
+    <p>{{ lesson.popup1 }}</p>
+  </div>
+</div>
+
+<div id="infoModal2" class="modal-box">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('infoModal2').style.display='none'">&times;</span>
+    <p>{{ lesson.popup2 }}</p>
+  </div>
+</div>
+
+<script>
+  window.onclick = function(event) {
+    ['infoModal1', 'infoModal2'].forEach(id => {
+      var modal = document.getElementById(id);
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    });
+  }
+</script>
+{% endblock %}
