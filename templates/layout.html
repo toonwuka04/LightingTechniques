@@ -18,7 +18,19 @@
     <title>Lighting Techniques</title>
   </head>
   <body>
-    hello world
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white text-dark justify-content-between px-4">
+      <a class="navbar-brand trebuchet" href="/">HOME</a>
+      <h2 class="mx-auto font-weight-bold impact">Lighting Techniques</h2>
+      <a class="nav-link text-dark trebuchet" href="#">SEARCH</a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container py-5">
+      {% block content %}
+      
+      {% endblock %}
+    </div>
 
   </body>
 </html>

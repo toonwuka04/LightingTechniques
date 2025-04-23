@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.navbar {
+    padding-top: 0.10rem;
+    padding-bottom: 0.10rem;
+    min-height: 48px; /* adjust as needed */
+}
+
+/* .navbar h2 {
+    font-size: 1.25rem; /* slightly smaller title text
+    margin: 0;
+    line-height: 1.2;
+} */
+
+.impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.trebuchet {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.lexend {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+a, h1, h3, h4, h5, h6, p, li {
+    color: white;
+}
+
+.submit-button {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    height: 40px; /* or whatever value you like */
+    line-height: 40px;
+}
+
+.question-block {
+    margin-bottom: 2rem; /* reduce from 3rem or 5rem to something smaller */
+  }
