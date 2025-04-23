@@ -2,18 +2,16 @@
 
 {% block content %}
 
+<script>
+    const quizId = {{ quiz_id }};
+</script>
 <script src="{{ url_for('static', filename='quiz.js') }}"></script>
 
-<div class="text-center">
+
+<div class="quiz-wrapper">
     <h3 id="quiz-title" class="font-weight-bold mb-4 text-left px-4 impact"></h3>
     <div id="quiz-content" class="text-left mx-auto lexend" style="max-width: 600px;"></div>
-    
-
-    <div class="fixed-bottom arial">
-        <button class="w-100 border-0 text-uppercase submit-button">
-          SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT
-        </button>
-      </div>
+  </div>
   </div>
 
 

@@ -7,12 +7,6 @@
     min-height: 48px; /* adjust as needed */
 }
 
-/* .navbar h2 {
-    font-size: 1.25rem; /* slightly smaller title text
-    margin: 0;
-    line-height: 1.2;
-} */
-
 .impact {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -52,4 +46,4 @@ a, h1, h3, h4, h5, h6, p, li {
 
 .question-block {
     margin-bottom: 2rem; /* reduce from 3rem or 5rem to something smaller */
-  }
+}

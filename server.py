@@ -39,6 +39,13 @@ def load_lessons():
         data = json.load(f)
         return list(data.values()) 
 
+def load_quizzes():
+    with open("static/quizzes.json") as f:
+        data = json.load(f)
+        return list(data.values()) 
+
+        
+
 @app.route("/")
 def start():
     return render_template("start.html")
@@ -55,14 +62,51 @@ def learn(lesson_id):
         lesson = data[str(lesson_id)]  
         return render_template("learn.html", lesson=lesson)
 
+@app.route('/quiz/<int:quiz_id>')
+def quiz(quiz_id):
+    with open("static/quizzes.json") as f:
+        quizzes = json.load(f)
+    quiz = quizzes.get(str(quiz_id))
+    if not quiz:
+        return "Quiz not found", 404
+    return render_template("quiz.html", quiz_id=quiz_id)
 
-@app.route('/quiz')
-def quiz():
-    return render_template('quiz.html')
+@app.route('/get_quiz_data/<int:quiz_id>')
+def get_quiz_data(quiz_id):
+    with open("static/quizzes.json") as f:
+        quizzes = json.load(f)
+    quiz = quizzes.get(str(quiz_id))
+    if not quiz:
+        return jsonify({"error": "Quiz not found"}), 404
+    return jsonify(quiz)
 
-@app.route('/get_quiz_data')
-def get_quiz_data():
-    return jsonify(quiz_data)
+@app.route('/submit_quiz/<int:quiz_id>', methods=['POST'])
+def submit_quiz(quiz_id):
+    with open("static/quizzes.json") as f:
+        quizzes = json.load(f)
+    quiz = quizzes.get(str(quiz_id))
+    if not quiz:
+        return "Quiz not found", 404
+
+    score = 0
+    total = len(quiz["questions"])
+    responses = []
+
+    for i, question in enumerate(quiz["questions"]):
+        user_answer = request.form.get(f'q{i}', '').strip()
+        correct_answer = question["answer"]
+        correct = user_answer.lower() == correct_answer.lower()
+        if correct:
+            score += 1
+        responses.append({
+            "question": question["question"],
+            "your_answer": user_answer,
+            "correct_answer": correct_answer,
+            "correct": correct
+        })
+
+    return render_template("results.html", score=score, total=total, responses=responses, quiz_id=quiz_id)
+
 
 if __name__ == '__main__':
    app.run(debug = True, port=5001)

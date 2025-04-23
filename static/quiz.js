@@ -1,20 +1,38 @@
 $(document).ready(function () {
-    $.getJSON("/get_quiz_data", function (data) {
+    $.getJSON(`/get_quiz_data/${quizId}`, function (data) {
       $("#quiz-title").text(data.title);
-
+  
+      let formHtml = `<form method="POST" action="/submit_quiz/${quizId}" id="quiz-form">`;
+  
       data.questions.forEach((q, i) => {
-        let html = `<div class="question-block"><p>${i + 1}. ${q.question}</p>`;
+        formHtml += `<div class="question-block"><p>${i + 1}. ${q.question}</p>`;
         
         if (q.type === "multiple_choice") {
           q.options.forEach(opt => {
-            html += `<div class="pl-3 mb-1">${opt}</div>`;
+            formHtml += `
+              <div class="pl-3 mb-1">
+                <input type="radio" name="q${i}" value="${opt.charAt(0)}"> ${opt}
+              </div>`;
           });
         } else if (q.type === "fill_in_blank") {
-          html += `<input type="text" class="form-control mt-2" placeholder="Your answer here...">`;
+          formHtml += `<input type="text" name="q${i}" class="form-control mt-2" placeholder="Your answer here...">`;
         }
-      
-        html += `</div>`; // close the question-block div
-        $("#quiz-content").append(html);
+  
+        formHtml += `</div>`;
       });
+  
+      formHtml += `</form>`; // close the form
+      $("#quiz-content").html(formHtml);
+  
+      // Append full-width submit button *outside* of quiz-content
+      const buttonHtml = `
+        <div class="fixed-bottom">
+          <button form="quiz-form" type="submit" class="submit-button w-100 border-0 text-uppercase">
+            SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT
+          </button>
+        </div>
+      `;
+      $("body").append(buttonHtml);
     });
   });
+  

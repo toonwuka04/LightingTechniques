@@ -1,0 +1,34 @@
+{
+    "1": {
+      "title": "Quiz One: Rembrandt lighting",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "question": "Which of the following paintings shows Rembrandt Lighting?",
+          "options": [
+            "A. A portrait with flat front lighting",
+            "B. A face with a triangle of light under one eye",
+            "C. A painting with full backlighting",
+            "D. A photo with strong shadows on both cheeks"
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which lighting type creates soft shadows and even skin tone?",
+          "options": [
+            "A. Split Lighting",
+            "B. Hard Light",
+            "C. Soft Light",
+            "D. Rembrandt Lighting"
+          ],
+          "answer": "D"
+        },
+        {
+          "type": "fill_in_blank",
+          "question": "The lighting technique that uses strong contrast between light and shadow, often in dramatic scenes, is called _____________.",
+          "answer": "Rembrandt"
+        }
+      ]
+    }
+  }
