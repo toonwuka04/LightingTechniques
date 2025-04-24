@@ -47,3 +47,11 @@ a, h1, h3, h4, h5, h6, p, li {
 .question-block {
     margin-bottom: 2rem; /* reduce from 3rem or 5rem to something smaller */
 }
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* ensure it's above everything */
+  }

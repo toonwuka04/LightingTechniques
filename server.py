@@ -34,6 +34,15 @@ quiz_data = {
     ]
 }
 
+# In-memory session results (wiped on restart)
+session_results = {
+    "1": None,
+    "2": None,
+    "3": None,
+    "4": None,
+    "5": None
+}
+
 def load_lessons():
     with open("static/lessons.json") as f:
         data = json.load(f)
@@ -105,7 +114,27 @@ def submit_quiz(quiz_id):
             "correct": correct
         })
 
+    # Save result in memory
+    session_results[str(quiz_id)] = f"{score}/{total}"
+
     return render_template("results.html", score=score, total=total, responses=responses, quiz_id=quiz_id)
+
+@app.route("/quizresults")
+def quiz_results():
+    with open("static/quizzes.json") as f:
+        quizzes = json.load(f)
+
+    quiz_summaries = []
+    for i in range(1, 6):
+        quiz = quizzes.get(str(i))
+        status = session_results.get(str(i)) or "Uncompleted"
+        quiz_summaries.append({
+            "id": i,
+            "title": quiz["title"],
+            "status": status
+        })
+
+    return render_template("quiz_results.html", quiz_summaries=quiz_summaries)
 
 
 if __name__ == '__main__':

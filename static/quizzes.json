@@ -30,5 +30,115 @@
           "answer": "Rembrandt"
         }
       ]
+    },
+    "2": {
+        "title": "Quiz Two: Caravaggio's Chiaroscuro",
+        "questions": [
+            {
+                "type": "true_false",
+                "question": "Chiaroscuro is a lighting technique that uses strong contrast between light and dark to create dramatic effects.",
+                "options": ["True", "False"],
+                "answer": "True"
+            },
+            {
+                "type": "fill_in_blank",
+                "question": "Chiaroscuro comes from an Italian word meaning _____________.",
+                "answer": "light-dark"
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following paintings best shows Chiaroscuro?",
+                "options": [
+                    "A. A flat-lit photo with minimal shadows",
+                    "B. A brightly lit street scene in daylight",
+                    "C. Caravaggio’s “Calling of Saint Matthew”",
+                    "D. A modern product photo with studio flash evenly spread"
+                ],
+                "answer": "C"
+            }
+        ]
+    },
+    "3": {
+        "title": "Quiz Three: Claude Monet Lighting",
+        "questions": [
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following best describes Monet’s approach to light?",
+                "options": [
+                    "A. He used strong contrasts between light and dark for drama",
+                    "B. He painted night scenes only with artificial light",
+                    "C. He observed how natural light changed colors throughout the day",
+                    "D. He avoided shadows to keep his palette flat"
+                ],
+                "answer": "C"
+            },
+            {
+                "type": "fill_in_blank",
+                "question": "Monet often painted the same subject multiple times under different _____________ conditions to study light and color.",
+                "answer": "lighting"
+            },
+            {
+                "type": "true_false",
+                "question": "Monet’s technique relied heavily on artificial studio lighting.",
+                "options": ["True", "False"],
+                "answer": "False"
+            }
+        ]
+    },
+    "4": {
+        "title": "Quiz Four: Gerard van Honthorst",
+        "questions": [
+            {
+                "type": "multiple_choice",
+                "question": "What is Gerard van Honthorst best known for in terms of lighting?",
+                "options": [
+                    "A. Using soft natural daylight only",
+                    "B. Using only moonlight in his landscapes",
+                    "C. Using dramatic candlelight in indoor scenes",
+                    "D. Painting only outdoor sunlit portraits"
+                ],
+                "answer": "C"
+            },
+            {
+                "type": "fill_in_blank",
+                "question": "Gerard van Honthorst often used a single _____________ as the main source of light in his night scenes.",
+                "answer": "candle"
+            },
+            {
+                "type": "true_false",
+                "question": "Gerard van Honthorst became known as “Gerard of the night” because he painted glowing landscapes under the moon.",
+                "options": ["True", "False"],
+                "answer": "False"
+            }
+        ]
+    },
+    "5": {
+        "title": "Quiz Five: Leonardo da Vinci Light & Shade",
+        "questions": [
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following best describes Leonardo’s use of Sfumato?",
+                "options": [
+                    "A. Harsh shadows to emphasize volume",
+                    "B. Strong spotlight on the subject",
+                    "C. Soft, hazy blending of tones to avoid hard edges",
+                    "D. Flat light with no visible transition"
+                ],
+                "answer": "C"
+            },
+            {
+                "type": "fill_in_blank",
+                "question": "Leonardo used a soft glow behind the subject to highlight edges. This is called _____________ lighting.",
+                "answer": "rim"
+            },
+            {
+                "type": "true_false",
+                "question": "Leonardo da Vinci only used one style of lighting throughout his career.",
+                "options": ["True", "False"],
+                "answer": "False"
+            }
+        ]
     }
-  }
+}
+
+  

@@ -6,8 +6,8 @@ $(document).ready(function () {
   
       data.questions.forEach((q, i) => {
         formHtml += `<div class="question-block"><p>${i + 1}. ${q.question}</p>`;
-        
-        if (q.type === "multiple_choice") {
+  
+        if (q.type === "multiple_choice" || q.type === "true_false") {
           q.options.forEach(opt => {
             formHtml += `
               <div class="pl-3 mb-1">
@@ -21,14 +21,14 @@ $(document).ready(function () {
         formHtml += `</div>`;
       });
   
-      formHtml += `</form>`; // close the form
+      formHtml += `</form>`;
       $("#quiz-content").html(formHtml);
   
-      // Append full-width submit button *outside* of quiz-content
+      // Append full-width fixed-bottom submit button to <body>
       const buttonHtml = `
         <div class="fixed-bottom">
           <button form="quiz-form" type="submit" class="submit-button w-100 border-0 text-uppercase">
-            SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT
+            SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT SUBMIT
           </button>
         </div>
       `;

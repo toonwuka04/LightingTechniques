@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container text-center mt-5">
+  <h2 class="impact mb-4">Your Quiz Results</h2>
+  <div class="lexend">
+    {% for quiz in quiz_summaries %}
+      <div class="mb-3">
+        <h5>{{ quiz.title }}</h5>
+        <p>Status: <strong>{{ quiz.status }}</strong></p>
+        <a href="/quiz/{{ quiz.id }}" class="btn btn-outline-light btn-sm">Retake Quiz</a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
