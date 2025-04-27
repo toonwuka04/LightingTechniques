@@ -3,31 +3,26 @@
       "title": "Quiz One: Rembrandt lighting",
       "questions": [
         {
+          "type": "fill_in_blank",
+          "question": "Rembrandt lighting involves a single light source positioned at a _____________ angle to the subject.",
+          "answer": "45-degree"
+        },
+        {
           "type": "multiple_choice",
-          "question": "Which of the following paintings shows Rembrandt Lighting?",
+          "question": "What is the most recognizable feature of Rembrandt lighting on the subject's face?",
           "options": [
-            "A. A portrait with flat front lighting",
-            "B. A face with a triangle of light under one eye",
-            "C. A painting with full backlighting",
-            "D. A photo with strong shadows on both cheeks"
+            "A. A shadow across both eyes",
+            "B. A triangle or diamond of light under one eye",
+            "C. A bright light evenly covering both sides of the face",
+            "D. A circle of light around the forehead"
           ],
           "answer": "B"
         },
         {
-          "type": "multiple_choice",
-          "question": "Which lighting type creates soft shadows and even skin tone?",
-          "options": [
-            "A. Split Lighting",
-            "B. Hard Light",
-            "C. Soft Light",
-            "D. Rembrandt Lighting"
-          ],
-          "answer": "D"
-        },
-        {
-          "type": "fill_in_blank",
-          "question": "The lighting technique that uses strong contrast between light and shadow, often in dramatic scenes, is called _____________.",
-          "answer": "Rembrandt"
+          "type": "true_false",
+          "question": "Rembrandt lighting is always applied dramatically and never subtly.",
+          "options": ["True", "False"],
+          "answer": "False"
         }
       ]
     },
@@ -47,14 +42,14 @@
             },
             {
                 "type": "multiple_choice",
-                "question": "Which of the following paintings best shows Chiaroscuro?",
+                "question": "Which of the following statements best explains why Caravaggio's chiaroscuro technique is considered emotionally powerful?",
                 "options": [
-                    "A. A flat-lit photo with minimal shadows",
-                    "B. A brightly lit street scene in daylight",
-                    "C. Caravaggio’s “Calling of Saint Matthew”",
-                    "D. A modern product photo with studio flash evenly spread"
+                    "A. It uses soft transitions and pastel colors for a calming effect.",
+                    "B. It relies on dramatic contrasts between light and dark to emphasize narrative and emotion.",
+                    "C. It avoids strong shadows in favor of overall brightness.",
+                    "D. It focuses only on accurate anatomical drawing without light effects"
                 ],
-                "answer": "C"
+                "answer": "B"
             }
         ]
     },
@@ -63,7 +58,7 @@
         "questions": [
             {
                 "type": "multiple_choice",
-                "question": "Which of the following best describes Monet’s approach to light?",
+                "question": "Which of the following best describes Monet's approach to light?",
                 "options": [
                     "A. He used strong contrasts between light and dark for drama",
                     "B. He painted night scenes only with artificial light",
@@ -75,11 +70,11 @@
             {
                 "type": "fill_in_blank",
                 "question": "Monet often painted the same subject multiple times under different _____________ conditions to study light and color.",
-                "answer": "lighting"
+                "answer": "weather"
             },
             {
                 "type": "true_false",
-                "question": "Monet’s technique relied heavily on artificial studio lighting.",
+                "question": "Monet's technique relied heavily on artificial studio lighting.",
                 "options": ["True", "False"],
                 "answer": "False"
             }
@@ -102,11 +97,11 @@
             {
                 "type": "fill_in_blank",
                 "question": "Gerard van Honthorst often used a single _____________ as the main source of light in his night scenes.",
-                "answer": "candle"
+                "answer": "artificial light"
             },
             {
                 "type": "true_false",
-                "question": "Gerard van Honthorst became known as “Gerard of the night” because he painted glowing landscapes under the moon.",
+                "question": "Gerard van Honthorst became known as 'Gerard of the night' because he painted glowing landscapes under the moon.",
                 "options": ["True", "False"],
                 "answer": "False"
             }
@@ -117,7 +112,7 @@
         "questions": [
             {
                 "type": "multiple_choice",
-                "question": "Which of the following best describes Leonardo’s use of Sfumato?",
+                "question": "Which of the following best describes Leonardo's use of Sfumato?",
                 "options": [
                     "A. Harsh shadows to emphasize volume",
                     "B. Strong spotlight on the subject",
@@ -140,5 +135,3 @@
         ]
     }
 }
-
-  

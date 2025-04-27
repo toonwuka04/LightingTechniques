@@ -104,7 +104,16 @@ def submit_quiz(quiz_id):
     for i, question in enumerate(quiz["questions"]):
         user_answer = request.form.get(f'q{i}', '').strip()
         correct_answer = question["answer"]
-        correct = user_answer.lower() == correct_answer.lower()
+        
+        # Handle True/False questions differently
+        if question["type"] == "true_false":
+            # Convert user answer (T/F) to full word (True/False)
+            user_answer_full = "True" if user_answer.upper() == "T" else "False"
+            correct = user_answer_full == correct_answer
+        else:
+            # Handle other question types as before
+            correct = user_answer.lower() == correct_answer.lower()
+            
         if correct:
             score += 1
         responses.append({
