@@ -54,4 +54,20 @@ a, h1, h3, h4, h5, h6, p, li {
     left: 0;
     width: 100%;
     z-index: 1000; /* ensure it's above everything */
-  }
+}
+
+.has-error {
+    border-left: 3px solid #dc3545;
+    padding-left: 10px;
+}
+
+.error-message {
+    font-size: 0.9em;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.submit-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
