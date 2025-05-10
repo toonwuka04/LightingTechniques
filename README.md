@@ -9,3 +9,16 @@
 
 - Code Learning: Jialang
 - Code Quiz: Tobechi
+
+# Steps
+
+1. git clone this repo into your local desktop
+2. run this command in your terminal after git cloning:
+```
+python3 server.py
+```
+or this command
+```
+python server.py
+```
+3. Go to the host url listed in the terminal ([it might be this](http://127.0.0.1:5001) )
