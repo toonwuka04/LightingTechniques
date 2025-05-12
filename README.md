@@ -17,7 +17,7 @@
 ```
 cd path/to/LightingTechniques
 ```
-4. run this command in your terminal after git cloning:
+3. run this command in your terminal after git cloning:
 ```
 python3 server.py
 ```
@@ -25,4 +25,4 @@ or this command
 ```
 python server.py
 ```
-3. Go to the host url listed in the terminal ([it might be this](http://127.0.0.1:5001) )
+4. Go to the host url listed in the terminal ([it might be this](http://127.0.0.1:5001) )
