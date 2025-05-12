@@ -2,28 +2,32 @@
 {% block title %}{{ lesson.title }}{% endblock %}
 
 {% block content %}
-
 <style>
   body {
     background-color: black !important;
   }
+
   .learn-section {
     background-color: black;
     color: white;
     padding: 2rem;
     font-family: Arial, sans-serif;
+    padding-bottom: 100px; 
   }
+
   .learn-title {
     font-size: 1.75rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
+
   .learn-description {
     font-style: italic;
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
   }
+
   .learn-text {
     max-width: 900px;
     margin: 0 auto 2rem auto;
@@ -31,16 +35,19 @@
     line-height: 1.6;
     text-align: center;
   }
+
   .image-container {
     position: relative;
     text-align: center;
     margin-bottom: 3rem;
   }
+
   .learn-image {
     width: 80%;
     max-width: 800px;
     height: auto;
   }
+
   .info-icon {
     position: absolute;
     top: 50%;
@@ -55,6 +62,7 @@
     height: 35px;
     line-height: 35px;
   }
+
   .modal-box {
     display: none;
     position: fixed;
@@ -66,6 +74,7 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.85);
   }
+
   .modal-content {
     background-color: #111;
     color: white;
@@ -75,6 +84,7 @@
     width: 80%;
     max-width: 600px;
   }
+
   .close {
     color: #aaa;
     float: right;
@@ -82,25 +92,49 @@
     font-weight: bold;
     cursor: pointer;
   }
+
   .close:hover {
     color: white;
   }
-  .quiz-button {
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 1rem;
-    margin: 3rem auto 0 auto;
+
+
+  .quiz-banner {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    max-width: 600px;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
+    height: 50px;
+    background-color: white;
+    overflow: hidden;
+    z-index: 10000;
   }
-  .quiz-button:hover {
-    background-color: #ddd;
+
+  .quiz-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+  }
+
+  .quiz-track a {
+    text-decoration: none;
+  }
+
+  .quiz-track span {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 0 10px;
+    white-space: nowrap;
+    line-height: 50px;
+    color: black;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 </style>
 
@@ -121,11 +155,20 @@
     <img class="learn-image" src="{{ lesson.image2 }}" alt="image2">
     <div class="info-icon" onclick="document.getElementById('infoModal2').style.display='block'">i</div>
   </div>
-
-  <a href="/quiz/{{ lesson.id }}" class="quiz-button">TAKE A QUIZ</a>
 </div>
 
-<!-- Modal Popups -->
+
+<div class="quiz-banner">
+  <div class="quiz-track">
+    {% for i in range(20) %}
+      <a href="/quiz/{{ lesson.id }}">
+        <span>TAKE A QUIZ</span>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+
 <div id="infoModal1" class="modal-box">
   <div class="modal-content">
     <span class="close" onclick="document.getElementById('infoModal1').style.display='none'">&times;</span>
@@ -148,6 +191,6 @@
         modal.style.display = "none";
       }
     });
-  }
+  };
 </script>
 {% endblock %}
