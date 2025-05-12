@@ -34,15 +34,17 @@ a, h1, h3, h4, h5, h6, p, li {
 .submit-button {
     background-color: white;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
     letter-spacing: 1px;
+    height: 60px;
+    line-height: 60px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
-    height: 40px; /* or whatever value you like */
-    line-height: 40px;
 }
+  
 
 .question-block {
     margin-bottom: 2rem; /* reduce from 3rem or 5rem to something smaller */
