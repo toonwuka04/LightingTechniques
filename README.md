@@ -13,7 +13,11 @@
 # Steps
 
 1. git clone this repo into your local desktop
-2. run this command in your terminal after git cloning:
+2. navigate into the project directory (replace the path with where you saved it):
+```
+cd path/to/LightingTechniques
+```
+4. run this command in your terminal after git cloning:
 ```
 python3 server.py
 ```
